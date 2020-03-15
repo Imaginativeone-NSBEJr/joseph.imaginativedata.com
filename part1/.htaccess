@@ -1,0 +1,6 @@
+AddHandler application/x-httpd-recommended-php .php .php5 .php4 .php3
+
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
